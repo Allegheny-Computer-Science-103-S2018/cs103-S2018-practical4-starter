@@ -188,8 +188,8 @@ if [ "$CHECK" = true ]; then
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/www \
                                      --checkfiles index.html --fragments "css/emoji.css" --fragmentcounts 1
   determine_exit_code $?
-  # --> GatorGrader CHECK: the repository contains at least five commits (update to current + 5)
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 5
+  # --> GatorGrader CHECK: the repository contains at least three commits (update to current + 3)
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 12
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
